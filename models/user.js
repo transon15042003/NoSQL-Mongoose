@@ -75,7 +75,7 @@ const userSchema = new Schema(
                             },
                         };
                     });
-                    // console.log(cartProducts);
+                    console.log(cartProducts);
                     const order = {
                         items: cartProducts,
                         user: {
@@ -83,7 +83,7 @@ const userSchema = new Schema(
                         },
                     };
                     this.orders.push(order);
-                    console.log(this.orders);
+                    // console.log(this.orders);
                     this.cart.items = [];
                     const result = await this.save();
                     return result;

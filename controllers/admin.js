@@ -1,4 +1,3 @@
-const { mongo } = require("mongoose");
 const Product = require("../models/product");
 
 exports.getAdminProducts = async (req, res, next) => {
